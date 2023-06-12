@@ -6,8 +6,31 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+thead th {
+  width: 25%;
+} 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.highlight {
+    color: green;
+    font-family: Arial;
+    font-weight: bold;
+
+}
+.no_highlight {
+  color: black;
+  font-family: Arial;
+
 }
