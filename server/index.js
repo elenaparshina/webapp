@@ -2,8 +2,6 @@ const express = require("express");
 var session = require('express-session')
 const cors = require('cors');
 const fs = require('fs');
-const proxy = require('express-http-proxy');
-
 
 
 const PORT = process.env.PORT || 3001;
@@ -52,7 +50,7 @@ app.get('/set_env', async (req, res) => {
     let response_json = await response.json();
     let access_token = response_json.access_token;
     
-    console.log(JSON.stringify(response_json))
+   //  console.log(JSON.stringify(response_json))
     fs.writeFileSync(`./tokens/${req.session.id}`, access_token);
     //res.json(response_json);
     if (response.status == '200') {

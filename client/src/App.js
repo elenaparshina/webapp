@@ -102,7 +102,6 @@ function App() {
         </tr>  
         )  
       });
-      console.log('table_body'+table_body)
       return (
         <table>
           <thead>
